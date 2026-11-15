@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>ASTROVITAL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,500;1,300&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/index.css"></head><body>
+<div id="app"><nav id="nav" aria-label="Main"></nav><div><header id="top"></header><main id="main"></main></div></div>
+<dialog id="dlg"><h2 style="margin-top:0">Emergency request</h2><p class="un">Your request will be saved and shown in the admin panel. This is not a diagnosis.</p>
+<form id="sf" novalidate><div class="fd"><label for="sr">Reason <span class="rq">*</span></label><select id="sr"></select></div>
+<div class="fd" style="margin-top:14px"><label for="sd">Describe the issue <span class="rq">*</span></label><textarea id="sd" rows="5" maxlength="2000" placeholder="What happened, where are you, and what help do you need?"></textarea></div>
+<small class="err" id="se" role="alert" style="display:block;min-height:18px;margin-top:6px"></small>
+<div class="row"><button class="btn red" type="submit">Send request</button><button class="btn" type="button" id="sc">Cancel</button></div></form></dialog>
+<script src="/static/js/index.js"></script></body></html>
